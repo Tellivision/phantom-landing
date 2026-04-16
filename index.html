@@ -61,13 +61,17 @@
         .marquee-inner {
             display: flex;
             gap: 4rem;
-            animation: marquee 30s linear infinite;
+            animation: marquee 80s linear infinite;
             white-space: nowrap;
+        }
+
+        .marquee:hover .marquee-inner {
+            animation-play-state: paused;
         }
 
         .marquee span {
             font-family: 'Syne', sans-serif;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             letter-spacing: 0.15em;
             text-transform: uppercase;
